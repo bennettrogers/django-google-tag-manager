@@ -8,21 +8,21 @@ from setuptools import setup, find_packages
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
+
 from gtm import __version__
 
 setup(
-    name = "django-google-tag-manager",
-    version = __version__,
-    author = "Tomas Neme",
-    author_email = "lacrymology@gmail.com",
-    description = ("Easily include your Google Tag Manager tag in your "
-                   "django site"),
-    license = "MIT",
-    keywords = "django generic-views",
-    url = "https://github.com/Lacrymology/django-google-tag-manager",
+    name="django-google-tag-manager",
+    version=__version__,
+    author="Tomas Neme",
+    author_email="lacrymology@gmail.com",
+    description=("Easily include your Google Tag Manager tag in your " "django site"),
+    license="MIT",
+    keywords="django generic-views",
+    url="https://github.com/Lacrymology/django-google-tag-manager",
     packages=find_packages(),
     include_package_data=True,
-    long_description=read('README.md'),
+    long_description=read("README.md"),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
